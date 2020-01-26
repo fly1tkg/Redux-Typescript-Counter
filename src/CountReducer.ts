@@ -6,11 +6,13 @@ const actionCreator = actionCreatorFactory()
 export interface CountActions {
   countup: (n: number) => void
   countdown: (n: number) => void
+  slowHelloWorld:() => void
 }
 
 export const countActions = {
   countup: actionCreator<number>('ACTIONS_COUNTUP'),
-  countdown: actionCreator<number>('ACTIONS_COUNTDOWN')
+  countdown: actionCreator<number>('ACTIONS_COUNTDOWN'),
+  slowHelloWorld: actionCreator<void>('ACTIONS_SLOW_HELLO_WORLD')
 }
 
 export interface CountState {

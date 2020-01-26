@@ -8,6 +8,7 @@ function mapDispatchToProps(dispatch: Dispatch<Action<any>>) {
   return {
     countup: (n: number) => dispatch(countActions.countup(n)),
     countdown: (n: number) => dispatch(countActions.countdown(n)),
+    slowHelloWorld: () => dispatch(countActions.slowHelloWorld())
   }
 }
 
